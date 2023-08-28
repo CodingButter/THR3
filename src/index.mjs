@@ -14,7 +14,6 @@ const objPath = "https://upnow-prod.ff45e40d1a1c8f7e7de4e976d0c9e555.r2.cloudfla
 const loader = new libs.loaders.OBJLoader();
 loader.load(objPath, (dog) => {
 
-  console.log(dog)
   const scene = new Scene();
   const renderer = new Renderer({ clear_color: "black", context: "2d" });
   const camera = new PerspectiveCamera({ position: new Vec3(0,1,-7) });
